@@ -10,6 +10,10 @@ body {
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     position: relative;
     margin: 200px auto;
+    animation: spin;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 #yin-yang .one {
@@ -50,4 +54,13 @@ body {
     border-radius: 50%;
     left: 80px;
     top: 80px;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }

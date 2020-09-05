@@ -2,14 +2,31 @@ body {
     background-color: gray;
 }
 
+p {
+    color: #f9f9f9;
+}
+
+.container {
+    text-align: center;
+    /* position: relative; */
+    border: 1px solid red;
+    /* margin: auto auto; */
+}
+
 #yin-yang {
+    margin: auto auto;
     height: 400px;
     width: 400px;
     border-radius: 50%;
     background: linear-gradient(to bottom, #f9f9f9 0%, #ffffff 49%, #000000 50%, #000000 55%, #000000 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     position: relative;
-    margin: 200px auto;
+    /* margin: 100px auto; */
+    /* 动画效果 */
+    animation: spin;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 #yin-yang::before {
@@ -36,4 +53,13 @@ body {
     position: absolute;
     right: 0;
     top: 100px;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }

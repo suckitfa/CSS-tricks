@@ -1,0 +1,39 @@
+body {
+    background-color: gray;
+}
+
+#yin-yang {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #f9f9f9 0%, #ffffff 49%, #000000 50%, #000000 55%, #000000 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    position: relative;
+    margin: 200px auto;
+}
+
+#yin-yang::before {
+    border: 80px solid #000;
+    display: block;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 100px;
+}
+
+#yin-yang::after {
+    border: 80px solid #fff;
+    display: block;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 100px;
+}

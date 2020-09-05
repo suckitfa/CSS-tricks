@@ -1,0 +1,53 @@
+body {
+    background-color: gray;
+}
+
+#yin-yang {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #f9f9f9 0%, #ffffff 49%, #000000 50%, #000000 55%, #000000 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    position: relative;
+    margin: 200px auto;
+}
+
+#yin-yang .one {
+    width: 200px;
+    height: 200px;
+    background-color: #000000;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 100px;
+}
+
+#yin-yang .two {
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 100px;
+}
+
+#yin-yang .one .circle {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 50%;
+    left: 80px;
+    top: 80px;
+}
+
+#yin-yang .two .circle {
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    position: absolute;
+    border-radius: 50%;
+    left: 80px;
+    top: 80px;
+}
